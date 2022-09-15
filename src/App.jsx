@@ -52,7 +52,7 @@ function App() {
           }
         />
 <Route
-          path="/trivia-game"
+          path="trivia-game"
           element={
             <Home
               setQuiz={setQuiz}
