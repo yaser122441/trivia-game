@@ -51,6 +51,20 @@ function App() {
             />
           }
         />
+<Route
+          path="/trivia-game"
+          element={
+            <Home
+              setQuiz={setQuiz}
+              setCategory={setCategory}
+              setLimit={setLimit}
+              setDifficulty={setDifficulty}
+              limit={limit}
+              difficulty={difficulty}
+              category={category}
+            />
+          }
+        />
         <Route
           path="quiz"
           element={
