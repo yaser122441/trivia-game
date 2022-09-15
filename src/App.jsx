@@ -67,6 +67,7 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
