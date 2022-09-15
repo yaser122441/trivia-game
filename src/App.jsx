@@ -66,7 +66,16 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={
+          <Home
+              setQuiz={setQuiz}
+              setCategory={setCategory}
+              setLimit={setLimit}
+              setDifficulty={setDifficulty}
+              limit={limit}
+              difficulty={difficulty}
+              category={category}
+            />} />
       </Routes>
   );
 }
