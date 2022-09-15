@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Questions from "./components/Questions";
 import ProtectedRoute from "./components/ProtectedRoute";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 
 function App() {
@@ -36,7 +36,6 @@ function App() {
   }, [category, limit, difficulty]);
 
   return (
-    <BrowserRouter>
       <Routes>
         <Route
           path="/"
@@ -69,7 +68,6 @@ function App() {
         />
         <Route path="*" element={<Home />} />
       </Routes>
-    </BrowserRouter>
   );
 }
 
